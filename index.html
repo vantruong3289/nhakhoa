@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nha khoa thành công</title>
+    <meta name="description"
+        content="Phòng khám Nha khoa Thành Công, Hãy đến với Phòng khám Nha khoa Thành Công để trải nghiệm dịch vụ chăm sóc răng miệng tận tâm và chuyên nghiệp. Nụ cười của bạn là niềm vui của chúng tôi!">
+    <meta name="keywords"
+        content="Phòng khám Nha khoa Thành Công, 168 Quang Tiến, Đại Mỗ, Nam Từ Liêm, Hà Nội, Nụ cười của bạn là niềm vui của chúng tôi!">
+    <meta name="author" content="Phòng khám Nha khoa Thành Công">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" />
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            // modules: [Navigation, Pagination],
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+            breakpoints: {
+                320: {
+                    navigation: {
+                        enabled: false,
+                    },
+                },
+                1024: {
+                    navigation: {
+                        enabled: true,
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                }
+            },
+            autoHeight: false,
+            effect: 'coverflow',
+        });
+        import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js";
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: "div.media",
+            children: "a",
+            pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js"),
+            loop: true,
+            zoom: false,
+            arrowPrevSVG: '<i class="fa-solid fa-arrow-left text-indigo-500 text-3xl"></i>',
+            arrowNextSVG: '<i class="fa-solid fa-arrow-right text-indigo-500 text-3xl"></i>',
+        });
+        lightbox.init();
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="sticky top-0 z-10 bg-indigo-500 text-black shadow bg-white">
+        <div
+            class="container mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-2 lg:gap-10 lg:py-3">
+            <div>
+                <div class="flex items-center gap-x-4">
+                    <img src="favicon.png" class="w-10 h-10" alt="Nha khoa Thành Công">
+                    <h1 class="text-xl font-medium lg:text-2xl">
+                        Nha khoa Thành Công
+                    </h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://maps.app.goo.gl/ySq8BxKCPDN6R4mj9">
+                    <address>168 Quang Tiến, Đại Mỗ, Nam Từ Liêm, Hà Nội</address>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Swiper -->
+    <div class="mx-auto overflow-hidden">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="h-80 w-full lg:mx-auto lg:h-[400px] lg:max-w-7xl lg:px-4 xl:h-[450px]">
+                        <img src="swiper-1.jpg" alt="" class="mx-auto h-full w-full object-contain">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-80 w-full lg:mx-auto lg:h-[400px] lg:max-w-7xl lg:px-4 xl:h-[450px]">
+                        <img src="swiper-2.jpg" alt="" class="mx-auto h-full w-full object-contain">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-80 w-full lg:mx-auto lg:h-[400px] lg:max-w-7xl lg:px-4 xl:h-[450px]">
+                        <img src="swiper-3.jpg" alt="" class="mx-auto h-full w-full object-contain">
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- End swiper -->
+
+    <!-- Welcome -->
+    <div class="">
+        <div class="container mx-auto min-h-96 max-w-7xl bg-white lg:p-4">
+            <div class="grid-cols-5 gap-10 lg:grid">
+                <div class="col-span-2">
+                    <div class="top-20 p-4 lg:sticky lg:p-0">
+                        <div class="text-gray-600 space-y-4">
+                            <p>
+                                Thực hiện khám, tư vấn và điều trị các bệnh về Răng hàm mặt theo yêu cầu của bệnh nhân.
+                                – Chỉ định những xét nghiệm cận
+                                lâm sàng để hỗ trợ cho việc chẩn đoán và xử trí các bệnh răng miệng/hàm mặt thường gặp
+                            </p>
+                            <p class="hidden">
+                                Phòng khám Nha khoa Thành Công 168 Quang tiến, Đại mỗ, Nam từ liêm, Hà nội. Với phương
+                                châm "Chăm sóc nụ cười, bảo vệ sức khỏe", chúng tôi cam kết mang đến
+                                cho
+                                khách hàng dịch vụ nha khoa
+                                toàn diện, hiện đại và an toàn nhất.
+                            </p>
+                            <p class="hidden">
+                                Được trang bị cơ sở vật chất hiện đại cùng với đội ngũ bác sĩ, nha sĩ có tay nghề cao và
+                                giàu kinh nghiệm, Phòng khám
+                                Nha khoa Thành Công luôn sẵn sàng đáp ứng mọi nhu cầu chăm sóc răng miệng của bạn, từ
+                                các
+                                dịch vụ cơ bản như khám định
+                                kỳ, điều trị sâu răng, đến các dịch vụ cao cấp như trồng răng implant, chỉnh nha, làm
+                                răng
+                                sứ thẩm mỹ.
+                            </p>
+                            <p class="hidden">
+                                Ngoài ra, không gian phòng
+                                khám
+                                được thiết kế thoải mái,
+                                tiện nghi, tạo cảm giác thân thiện và dễ chịu cho khách hàng.
+                            </p>
+                            <p class="hidden">
+                                Hãy đến với Phòng khám Nha khoa Thành Công để trải nghiệm dịch vụ chăm sóc răng miệng
+                                tận
+                                tâm và chuyên nghiệp. Nụ cười
+                                của bạn là niềm vui của chúng tôi!
+                            </p>
+                        </div>
+
+                        <div class="mt-8 h-72 w-full lg:h-[450px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9216348396817!2d105.75332957602633!3d20.995778188909163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134533b5b37b26f%3A0x71b1e383bbd033be!2sPK%20Nha%20Khoa%20Th%C3%A0nh%20C%C3%B4ng!5e0!3m2!1svi!2s!4v1743643530024!5m2!1svi!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-3">
+                    <div class="space-y-8">
+                        <div class="overflow-hidden border border-gray-200 lg:rounded">
+                            <div class="media grid gap-4">
+                                <div class="relative max-h-72 overflow-hidden bg-gray-100 lg:max-h-80">
+                                    <a href="2025-04-02-01.jpg" data-pswp-width="2048" data-pswp-height="945">
+                                        <img class="w-full object-cover lg:rounded-t" src="2025-04-02-01.jpg" alt=""
+                                            width="2048" height="945">
+                                    </a>
+                                </div>
+                                <div class="grid grid-cols-4 gap-4 px-4">
+                                    <div class=" lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-02.jpg" data-pswp-width="2048" data-pswp-height="945">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-02.jpg"
+                                                alt="" width="2048" height="945">
+                                        </a>
+                                    </div>
+                                    <div class=" lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-03.jpg" data-pswp-width="2048" data-pswp-height="1536">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-03.jpg"
+                                                alt="" width="2048" height="1536">
+                                        </a>
+                                    </div>
+                                    <div class=" lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-04.jpg" data-pswp-width="1536" data-pswp-height="2048">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-04.jpg"
+                                                alt="" width="1536" height="2048">
+                                        </a>
+                                    </div>
+                                    <div class=" lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-05.jpg" data-pswp-width="1536" data-pswp-height="2048">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-05.jpg"
+                                                alt="" width="1536" height="2048">
+                                            <div
+                                                class="lg:h-22 absolute bottom-0 left-0 right-0 top-0 grid h-20 place-content-center rounded bg-black/50">
+                                                <span class="text-lg text-white lg:text-2xl">+ 3</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hidden lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-06.jpg" data-pswp-width="1536" data-pswp-height="2048">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-06.jpg"
+                                                alt="" width="1536" height="2048">
+                                        </a>
+                                    </div>
+                                    <div class="hidden lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-07.jpg" data-pswp-width="1536" data-pswp-height="2048">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-07.jpg"
+                                                alt="" width="1536" height="2048">
+                                        </a>
+                                    </div>
+                                    <div class="hidden lg:h-22 relative h-20 bg-gray-100">
+                                        <a href="2025-04-02-08.jpg" data-pswp-width="1536" data-pswp-height="1536">
+                                            <img class="h-full w-full rounded object-cover" src="2025-04-02-08.jpg"
+                                                alt="" width="1536" height="1536">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4">
+                                <p class=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End welcome -->
+
+    <!-- Footer -->
+    <div class="mt-10 bg-[#f3f3f2]">
+        <div class="container mx-auto flex flex-wrap max-w-7xl gap-8 p-4">
+            <div class="space-y-1.5 overflow-hidden">
+                <img src="logo.png" class="w-40 h-40 rounded-lg -my-12" alt="Nha khoa Thành Công">
+            </div>
+            <div class="space-y-1.5 lg:space-y-2">
+                <p>
+                    Phone:
+                    <a href="tel:0964955992">0964955992</a>
+                </p>
+                <p>
+                    Facebook page:
+                    <a href="" class="text-indigo-500">https://swiperjs.com/get-started</a>
+                </p>
+                <p>
+                    Google maps:
+                    <a href="" class="text-indigo-500">https://maps.app.goo.gl/ySq8BxKCPDN6R4mj9</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Footer -->
+</body>
+
+</html>
